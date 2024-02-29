@@ -1,54 +1,64 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE > -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Your Title Here</title>
-    <style>
+    <style >
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+        
         .page1{
             background-image: url('images/page1bgg.jpg');
             background-size: cover;
             width: 100%;
-            height: 200vh;
-            background-size: cover;
-            z-index: 1;
-            padding-bottom: 10%;
+            height: 100%;
             background-position: center;
+            padding-top: 6%;
+            padding-bottom: 6%;
+        }
+.navbars {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 60%;
+    width: 100%;
+    top: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); 
+}
 
-            height: auto;
-   
-    
-        }
-   
-        
-        .navbars{
-            background-color: white;
-            position: absolute;
-            top: 5%;
-            left:20%;
-            width: 60%;
-            height:10%;
-            display: flex;
-            justify-content: center;
-            border-radius: 10px;
-            box-shadow: 25px;
-        }
 .logo {
-            margin-left:30px;
-            padding: 10px;            
-            max-width: 100px; 
-            margin-right: 20px; 
-        }
-        nav{
-            display: flex;
-            width: 74%;
-            margin: auto;
-            padding: px 0;
-            align-items: center;
-            justify-content: space-between;
-        }
+    margin-left: 40px;
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+
         .navbars nav ul{
             display: flex;
             list-style: none;
@@ -57,7 +67,6 @@
         }
         nav ul{
             justify-content: space-around;
-            padding-left: 15%;
 
         }
         nav ul li a:hover{
@@ -92,18 +101,36 @@
             justify-content: space-between;
 
         }
-        .headlines 
-{
+
+
+        /* .bgimage2 img{
+    width: 100%;
+    height: 100%;
+}
+.page4text{
+        padding:20px;
+        color: white;
+        margin: 6%;
+        padding-left: 15%;
+} */
+
+
+
+
+
+.container{
+        margin: 6%;
+        margin-top: 10%;
+        padding-left: 15%;
+}       
+.headlines {
     position: relative;
     color: white;
-    top: 45%;
-    left: 10%;
-    width: 80%;
     text-align: left;
-    margin-left: 10%;
-    padding-top: 15%;
-
+    width: 100%;
 }
+
+
 .headlines h3{
    font-family: cursive;
 }
@@ -113,7 +140,6 @@
     font-size: 3em; 
     position: relative; 
     margin-bottom: 10px; 
-    text-align: left;
 
 }
 
@@ -163,23 +189,24 @@
     align-items: center;
     justify-content: center;
     background-color:#0B1517;
-    width: 100;
-    top:50%;
-    padding: 130px;
+    width: 100%;
 }
 .subpage1 {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content:center;
+
 }
 
 .burgerimage{
-    justify-content: center;
-    margin:100px;
+    margin:20px;
 }
 .text2{
-    margin: 100px;
-    margin-left: -60px;
     color: white;
+    margin:20px;
+
 }
 .text2 p{
     color: grey;
@@ -245,9 +272,8 @@
 .gridboxes {
     
     text-align: center;
-    left: 20%;
     display: grid;
-    top:60%;
+    height: auto;    
     width: 70%;
     grid-template-columns: repeat(4, 1fr);
     padding: 60px 0px;
@@ -273,7 +299,7 @@
 }
 
 .foodimages img {
-    width: 150px; /* Set the width to 100% of the container */
+    width: 100%; /* Set the width to 100% of the container */
     height: auto; /* Maintain aspect ratio */
 }
 .itemdetails {
@@ -314,35 +340,23 @@ text-decoration: line-through;
 }
 
 .bgimage2{
-    z-index: 2;
     background-image: url('./images/page4image (1).jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
-    
     height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-   
 }
-.bgimage2{
-            width: calc(100vw - 290px);
-            height: 450px;
-            /* background-color: brown; */
 
-            
-}
 
 .bgimage2 img{
     width: 100%;
     height: 100%;
 }
 .page4text{
-        margin: 20px;
-        color: white;
         padding:20px;
+        color: white;
         margin: 6%;
-        margin-left: 15%;
+        padding-left: 15%;
 }
 .hotchicken{
     color: orange;
@@ -370,6 +384,7 @@ text-decoration: line-through;
 .page5item1{
     display: flex;
     width:100%;
+    justify-content: space-around;
     padding-top: 13%;
 }
 .page5pizza{
@@ -381,8 +396,8 @@ text-decoration: line-through;
 }
 .page5text{
     color: white;
+    margin-left:-100px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 0%;
 
 }
 .page5text p{
@@ -412,7 +427,6 @@ text-decoration: line-through;
 .page5text2{
     color: white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 5%;
 }
 .page5text2 p{
     margin-top: -10px;
@@ -422,17 +436,21 @@ text-decoration: line-through;
 }
 .page5meat{
     background-position:center;
-    padding-left: 100px;
     height: 350px;
     background-size: cover;
 }
 .teamheader {
+    border-top: 1px solid white;
+    width: 100%;
     margin-top: 10%;
     color: white;
     text-align: center;
 }
 
+
 .teamheader h1 {
+    margin-top: 5%;
+
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -469,11 +487,8 @@ text-decoration: line-through;
 .bgimage3{
     position: relative;
     margin-top: 10%;
-            width: calc(100vw - 40px);
-            height: 200px;
-            /* background-color: brown; */
-
-            
+    width:100%        
+      
 }
 
 .bgimage3 img{
@@ -490,14 +505,16 @@ text-decoration: line-through;
     color: white;
     margin-right: 50px;
 }
-.bgimage3text{
+.bgimage3text {
     position: absolute;
-    top: 50%; /* Adjust this value based on your needs */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    inset: 0; /* Equivalent to top: 0; right: 0; bottom: 0; left: 0; */
+    flex-direction: row;
+    align-items: center; /*comes at center by column*/
+    justify-content: center;  /*comes at center by row*/
     font-size: xx-large;
+    padding: 20px; /* Adjust the padding to create space around the text */
 }
+
 .brandnames{
     margin-right: 60px;
     margin-left: 20px;
@@ -510,7 +527,6 @@ text-decoration: line-through;
     justify-content: center;
     height: auto;
     width: 100%;
-    margin-bottom: -10%;
 }
 
 .managerpic img{
@@ -617,30 +633,82 @@ text-decoration: line-through;
     margin-top: 15px;
     margin-bottom: 5px;
 }
-
-
-
 .dateandcomments p{
     float: left;
     font-size: x-small;
 }
-.page3{
-    margin-top: 0%;
+.page3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:black;
+    background-color: black;
     width: 100%;
     padding-bottom: 10%;
 }
 
+/* .bgimagelast {
+    width: 100%;
+    position: relative;
+}
 
+.bgimagelast img {
+    width: 100%;
+    max-height: 300px; 
+}
 
-
-
-    
+.last_text {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: absolute;
  
+    inset: 0;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    font-size: medium;
+}
+
+.logolast {
+    max-width: 100px;
+}
+.last-logo{
+    margin-right: 150px;
+}
+.address{
+    margin-right: 50px;
+}
+.quick_links{   
+    margin-right: 50px;
+}
+
+.Instagramlist{
+    margin-right: 50px;
+}
+.last-logo img{
+    mix-blend-mode:color-dodge;
+    filter:drop-shadow(2px 2px 1px orange)
+}
+#last-icons{
+    margin-bottom: 10px;
+margin-right: 10px;
+}
+.quick_links ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.Instagram{
+    display: grid;
+    top:10%;
+    width: 20%;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Instaheader{
+  margin: 20px;
+  padding-bottom: 50px;
+} */
+
 
     </style>
 </head>
@@ -649,7 +717,7 @@ text-decoration: line-through;
         <div class="bgimage">
 
             <div class="navbars">
-                <img src="./images/logofooood.png" class="logo">
+                <img src="./images/burgerlogo1-removebg-preview.png" class="logo">
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -934,6 +1002,52 @@ text-decoration: line-through;
             
         </div>
     </div>
+
+    <!-- <div class="bgimagelast">
+        <img src="./images/bgimagelast.webp" >
+        <div class="last_text">
+            <div class="address">
+                <div class="last-logo"><img src="./images/lastlogoimage.png" class="logolast"></div>
+                <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.</p>
+                <div><span class="fas fa-map-marker-alt" id="last-icons"></span><span>4920 trailes end road United <br>states, FL 20102</span></div>
+                <div><span class="fas fa-inbox" id="last-icons"></span><span>infor@example.com <br> test@example.com</span></div>
+                <div><span class="fas fa-phone-alt" id="last-icons"></span><span>+123 456 7890 <br> +123 456 7651</span></div>
+            </div>
+            <div class="quick_links">
+                <ul>
+                    <h3>Quick Links</h3>
+                    <li>pizza</li>
+                    <li>Burger</li>
+                    <li>Cake</li>
+                    <li>Choco</li>
+                    <li>Ice Cream</li>
+                    <li>Maggi</li>
+                    <li>Burger</li>
+                </ul>
+
+            </div>
+            <div class="Instagramlist">
+                <span class="Instaheader">Instagram</span>
+                <div class="Instagram">
+                    
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+                    <div class="boxlast"><img src="./images/page5meat.png" class="instaimages"></div>
+
+                </div>
+               
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br>
+                    Expedita ratione.</p>
+                <div class="email-box"></div>    
+            </div>
+        </div>
+    </div> -->
 </body>
 </html>
            
